@@ -1,0 +1,345 @@
+.main_content-synthetica
+	.synthetica-slider
+		include ./slider.jade
+
+	.synthetica-collective
+		.collective-container
+			h4 THE COLLECTIVE
+			.container-collective
+				p
+					| 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+				.collective-vedio_player
+					video(id="myvideo",preload="auto" , poster="../../public/images/video-cover.jpg")
+						source(src="../../public/video/oceans.mp4" type='video/mp4')
+						source(src="../../public/video/oceans.webm" type='video/webm')
+						source(src="../../public/video/oceans.ogv" type='video/ogg')
+					.video-controls
+						.current
+						.duration
+					
+					img(src="../../public/images/playButton.jpg")
+				
+				p 
+					| 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. 
+
+				p 
+					| Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+
+	.synthetica-crew
+		.crew-container
+			.container-header
+				h4 THE CREW
+			.container-content
+				.content-member
+					.content-memberOne
+						.membersLayout
+							.members
+								h2 Peter Finlan
+								p 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								.crew-socials
+									ul
+										li
+											a(href="#")
+												i(class="fa fa-twitter")
+										li
+											a(href="#")
+												i(class="fa fa-linkedin")
+									
+				.content-member
+					.content-memberTwo
+						.membersLayout
+							.members
+								h2 Blaz Robar
+								p 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								.crew-socials
+									ul
+										li
+											a(href="#")
+												i(class="fa fa-twitter")
+										li
+											a(href="#")
+												i(class="fa fa-linkedin")
+									
+				.content-member
+					.content-memberThree
+						.membersLayout
+							.members
+								h2 Mary Lou
+								p 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								.crew-socials
+									ul
+										li
+											a(href="#")
+												i(class="fa fa-twitter")
+										li
+											a(href="#")
+												i(class="fa fa-linkedin")
+									
+				.content-member
+					.content-memberFour
+						.membersLayout
+							.members
+								h2 Kobe West
+								p 8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								.crew-socials
+									ul
+										li
+											a(href="#")
+												i(class="fa fa-twitter")
+										li
+											a(href="#")
+												i(class="fa fa-linkedin")
+			.container-skillset
+				.skillset-left
+					.bar-chart-wrapper
+						h5 Experience Design 
+							span.push-right 90%
+						.bar-wrapper
+							.bar.bar90
+					.bar-chart-wrapper
+						h5 HTML 
+							| HTML
+							sub 5
+							| CSS
+							sub 3
+							span.push-right 95%
+						.bar-wrapper
+							.bar.bar95
+				.skillset-right
+					.bar-chart-wrapper
+						h5 Interactive Prototyping
+							span.push-right 80%
+						.bar-wrapper
+							.bar.bar80
+					.bar-chart-wrapper
+						h5 Visual Design 
+							span.push-right 90%
+						.bar-wrapper
+							.bar.bar90
+
+	.synthetica-stats
+		.stats-container
+			.container-stats.counter
+				.stats-content
+					i.icon.icon-Cup
+					.content-wrapper
+						p.wrapper-number(data-stop="24").count 24
+						p.wrapper-text Awards Won
+				.stats-content
+					i.icon.icon-Book
+					.content-wrapper
+						p.wrapper-number(data-stop="341").count 341
+						p.wrapper-text Articles
+				.stats-content
+					i.icon.icon-Pen
+					.content-wrapper
+						p.wrapper-number(data-stop="43").count 43
+						p.wrapper-text Freebies
+
+	.synthetica-articles
+		.articles-container
+			.container-head
+				.head-heading
+					h4 Latest Articles
+				.head-sort
+					h5 Sort By
+					select.inputArticle-Sort 
+						option(value="") Experience Design
+						option(value="") Visual Design
+						option(value="") UI Patterns
+						option(value="") Product Design
+			.container-firstRow
+				.firstRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-one
+								.overlay
+								span.featured-tag Featured
+							.post-content
+								h2 8 solid tips when working with front-end developers
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") Product
+							li.article-comments
+								span
+									i.fa.fa-comments 51
+
+				.firstRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-two
+								.overlay
+							.post-content
+								h2 The 10 best traits of a awesome design leaders
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") Teams
+							li.article-comments
+								span
+									i.fa.fa-comments 42
+				.firstRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-three
+								.overlay
+							.post-content
+								h2 How to design well collaboratively with an agile product team
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") Teams
+							li.article-comments
+								span
+									i.fa.fa-comments 58
+
+			.container-secondRow
+				.secondRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-four
+								.overlay
+							.post-content
+								h2 The essentials of modern interaction design (mobile + tablet)
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") UX Design
+							li.article-comments
+								span
+									i.fa.fa-comments 14
+				.secondRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-five
+								.overlay
+							.post-content
+								h2 Overcoming barriers encountered in the pitch process (part 1)
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") Product
+							li.article-comments
+								span
+									i.fa.fa-comments 55
+				.secondRow-container
+					.article-post
+						a(href="#")
+							.post-image.post-image-six
+								.overlay
+							.post-content
+								h2 10 things we've learnt about our users (Case Study)
+								p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...
+						ul.article-footer
+							li.article-category
+								a(href="#") UX Design
+							li.article-comments
+								span
+									i.fa.fa-comments 20
+					
+			.container-bottom
+				a(href="#intro") View more
+
+	.synthetica-freebies
+		.freebies-intro
+			.intro-header
+				h4 Freshest Freebies
+			.intro-content
+				.content-first
+					p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.
+				.content-second
+					p A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.
+		.freebies-container
+			.container-firstFreebies
+				.container-firstFreebies-containe
+					img(src="../../public/images/sedna-freebie.jpg")
+					.containe-wrapper
+						.wrapper-like-share
+							a(href="#")
+								i.like-counter.fa.fa-heart-o
+								span.count 54
+						.wrapper-content
+							span 03/01/2016
+							h2 Sedna HTML CSS Template
+							.contentBtn
+								a(href="#").contentBtn Download
+					.containe-coat
+				.container-firstFreebies-containe.right
+					img(src="../../public/images/landio-freebie.jpg")
+					.containe-wrapper
+						.wrapper-like-share
+							a(href="#")
+								i.like-counter.fa.fa-heart-o
+								span.count 54
+						.wrapper-content
+							span 03/01/2016
+							h2 Land.io Sketch Template
+							.contentBtn
+								a(href="#").contentBtn Download
+					.containe-coat
+			.container-secondFreebies
+				.container-firstFreebies-containe
+					img(src="../../public/images/freebie-03.jpg")
+					.containe-wrapper
+						.wrapper-like-share
+							a(href="#")
+								i.like-counter.fa.fa-heart-o
+								span.count 54
+						.wrapper-content
+							span 03/01/2016
+							h2 Synthetica HTML5/CSS3 Template
+							.contentBtn
+								a(href="#").contentBtn Download
+					.containe-coat
+				.container-firstFreebies-containe.right
+					img(src="../../public/images/freebie-04.jpg")
+					.containe-wrapper
+						.wrapper-like-share
+							a(href="#")
+								i.like-counter.fa.fa-heart-o
+								span.count 54
+						.wrapper-content
+							span 03/01/2016
+							h2 Free logo concepts by Koby West
+							.contentBtn
+								a(href="#").contentBtn Download
+					.containe-coat
+			.container-bottom
+					a(href="#intro") View more
+
+	.synthetica-getStarted
+		.getStarted-container
+			h2 
+				|	Get started now. Download Synthetica 
+				a(href="http://tympanus.net/codrops/?p=26570") 
+					|	FREE
+				|		, via Codrops.
+			a(href="http://tympanus.net/codrops/?p=26570").button Get started
+
+
+	.synthetica-footer
+		.footer-container
+			.container-head
+				img(src="../../public/images/synthetica-logo.png" alt="Synthetica freebie html5 css3 template logo")
+				p A free HTML5/CSS3 template, exclusively for 
+					span Codrops
+
+			.container-nav
+				.nav-nav
+					.nav-left
+						a(href="#intro") The Collective 
+						a(href="#team") The Crew
+						a(href="#articles") The Articles 
+						a(href="#freebies") Freebies
+						a(href="#") Subscribe
+					.nav-right
+						a(href="http://tympanus.net/codrops/licensing/") License
+						a(href="#") 
+							i.fa.fa-share 
+							|	Share
+				.nav-foot
+					p
+						|	A free website template created exclusively for 
+					a(href="http://tympanus.net/codrops/") 
+						em Codrops

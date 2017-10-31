@@ -1,0 +1,87 @@
+html {
+  // font: $base-size $font-primary; 
+  	font-family: Raleway,Verdana,Arial,sans-serif;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	cursor: auto;
+	overflow-x: hidden;
+}
+html,body{
+  height:100vh;
+  width:100vw;
+  margin: 0;
+  padding: 0;
+}
+a:link, a:visited{
+	text-decoration: none;
+	color: blue;
+	cursor: pointer;
+}
+a:hover{
+	color: #7AE2DE;
+}
+ul,ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 15px;
+	line-height: 27px;
+	// padding-bottom: 15px;
+	color: #414A52;
+	margin: 0;
+}
+:after, :before{
+	box-sizing: border-box;
+}
+h4{
+	font-family: ubuntu;
+}
+a{
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+}
+
+.fa{
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+*{
+	box-sizing: border-box;
+	// outline: 1px solid red;
+}
+.fadeInUp{
+	animation-name: fadeUp;
+	animation-duration: 1s;
+}
+
+@keyframes fadeUp{
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,100%,0);
+		transform: translate3d(0,100%,0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+								

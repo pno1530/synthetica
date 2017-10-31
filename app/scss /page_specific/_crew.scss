@@ -1,0 +1,226 @@
+@media screen and (min-width: 768px){
+	.crew-container {
+		width: 750px;
+	}	
+}
+@media screen and (min-width: 992px){
+	.crew-container {
+		width: 970px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.crew-container {
+		width: 1170px;
+	}
+}
+
+.synthetica-crew{
+	padding: 125px 0;
+	background-color: #F4F6F9;
+
+
+	.crew-container{
+		margin: 0px auto;
+		padding: 0px 15px;
+		box-sizing: border-box;
+
+		h4{
+			font-size: 15px;
+			font-weight: 600;
+			margin: 7px 0 65px 60px;
+			text-transform: uppercase;
+		}
+		h4:after{
+			content: "";
+			display: block;
+			width: 30px;
+			margin-top: 15px;
+			background-color: #7AE2DE;
+			height: 2px;
+		}
+	}
+	.container-content{
+		@include clearfix;	
+		.content-member{
+			// width: 100% !important;
+			float: left;
+			height: 300px;
+			box-sizing: border-box;
+
+			.members{
+				display: none;
+				text-align: center;
+				padding: 15px 15px 25px 15px;
+				h2,p{
+					color: #fff;
+				}
+				h2{
+					font-size: 15px;
+					font-weight: 500;
+					line-height: 20px;
+					text-transform: uppercase;
+				}
+				p{
+					padding: 15px 15px 25px;
+					font-size: 15px;
+					line-height: 27px;
+				}
+				.crew-socials{
+					ul{
+						li{
+							display: inline-block;
+							margin-right: 10px;
+							a{
+								color: rgba(255,255,255,0.7);
+								
+								.fa-twitter:before {
+									content: "\f099";
+								}
+								.fa-linkedin:before {
+									content: "\f0e1";
+								}
+							}
+						}
+					}
+				}
+
+			}
+			&.content-member:hover{
+				.members{
+					display: inline-block;
+					display: table-cell;
+					vertical-align: middle;
+					height: 100%;
+				}
+				.membersLayout{
+					background-color: rgba(122,226,222,0.8);
+					height: 100%;
+					width: 100%;
+					display: table;
+				}
+			}
+		}
+		.content-memberOne{
+			background: url("../../public/images/crew-peter-finlan.jpg") no-repeat 0px 0px;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.content-memberTwo{
+			background: url("../../public/images/crew-blaz-robar.jpg") no-repeat 0px 0px;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.content-memberThree{
+			background: url("../../public/images/crew-mary-lou.jpg") no-repeat 0px 0px;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.content-memberFour{
+			background: url("../../public/images/crew-dude.jpg") no-repeat 0px 0px;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+}
+.container-skillset{
+	margin-top: 55px;
+	box-sizing: border-box;
+	
+	.bar-chart-wrapper{
+		margin-bottom: 35px;
+		position: relative;
+		h5{
+			font-size: 13px;
+			font-weight: 600;
+			display: inline-block;
+			text-transform: uppercase;
+			color: #414A52;
+			.push-right{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.bar-wrapper{
+			background-color: #414A52;
+			width: 100%;
+			// position: relative;
+			.bar{
+				height: 10px;
+				background-color: #7AE2DE;
+				margin: 10px 0;
+				overflow: hidden;
+				// position: relative;
+			}
+			.bar90{
+				width: 90%;
+			}
+			.bar95{
+				width: 95%;
+			}
+			.bar80{
+				width: 80%;
+			}
+		}
+
+	}
+	.skillset-left, .skillset-right{
+		// width: 50%;
+		
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+}
+@media screen and (max-width: 768px){
+	.crew-container{
+		width: auto;
+	}
+	.content-member{
+		width: 100%;
+		padding: 15px 0px;
+	}
+	.synthetica-crew{
+		padding: 80px 0px;
+	}
+}
+@media screen and (min-width: 768px){
+	.container-header{
+		h4{
+			margin-left: 0px;
+		}
+	}
+	.content-member{
+		width: 50%;
+		padding: 15px;
+		.content-memberOne, .content-memberTwo, .content-memberThree, .content-memberFour{
+			background-size: cover;
+			background-position: center;
+		}
+	}
+	.skillset-left, .skillset-right{
+		width: 100%;
+	}
+
+}
+@media screen and (min-width: 992px){
+	.content-member{
+		width: 25%;
+		padding: 0px 15px;
+		.content-memberOne, .content-memberTwo, .content-memberThree, .content-memberFour{
+			background-size: auto;
+		}
+	
+	}
+	.skillset-left, .skillset-right{
+		width: 50%;
+		float: left;
+	}
+}

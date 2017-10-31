@@ -1,0 +1,119 @@
+.synthetica-stats{
+	padding: 160px 0px;
+	background: url("../../public/images/stats-bg.jpg") no-repeat center center;
+	// background-size: auto auto;
+	background-size: cover;
+
+	.stats-container{
+		padding: 0px 15px;
+
+		.container-stats{
+			text-align: left;
+		}
+		.stats-content:last-child{
+			margin-bottom: 0px;
+		}
+		.stats-content{
+			width: 210px;
+			margin: 0 auto 100px;
+			text-align: left;
+			padding: 0px 15px;
+
+			i{
+				margin: 0;
+				margin-right: 0px;
+				padding: 0;
+				border: 0;
+				font: inherit;
+				font-family: inherit;
+				font-style: inherit;
+				font-weight: inherit;
+				font-size: inherit;
+				line-height: inherit;
+				font-variant-alternates: inherit;
+				font-variant-caps: inherit;
+				font-variant-east-asian: inherit;
+				font-variant-ligatures: inherit;
+				font-variant-numeric: inherit;
+				font-variant-position: inherit;
+				font-size: 100%;
+				vertical-align: baseline;
+			}
+
+			i.icon {
+				font-size: 50px;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: 10px;
+				color: #fff;
+			}
+			.icon {
+				font-family: 'Stroke-Gap-Icons';
+				font-weight: normal;
+				font-style: normal;
+				font-variant: normal;
+				line-height: 1;
+				text-transform: none;
+				// speak: none;
+				// -webkit-font-smoothing: antialiased;
+				// -moz-osx-font-smoothing: grayscale;
+			}
+			.icon-Cup:before {
+				content: '\e628';
+			}
+			.icon-Book::before {
+				content: '\e693';
+			}
+			.icon-Pen::before {
+				content: '\e676';
+			}
+			.content-wrapper{
+				display: inline-block;
+				// vertical-align: 22px;
+
+				p.wrapper-number {
+					font-family: Montserrat,Georgia,"Times New Roman",serif;
+					font-size: 48px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+				p.wrapper-text {
+					font-size: 15px;
+					font-weight: 500;
+					line-height: .7;
+					padding: 0;
+					text-transform: uppercase;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px){
+	.synthetica-stats{
+		padding: 80px 0px;
+	}
+}
+@media screen and (min-width: 768px){
+	.stats-container{
+		width: 750px;
+		box-sizing: border-box;
+		margin: 0px auto;
+
+		.container-stats{
+			box-sizing: border-box;
+			.stats-content{
+				width: 32%;
+				margin-bottom: 0px;
+				text-align: center;	
+				display: inline-block;
+				box-sizing: border-box;	
+			}
+		}
+	}
+}
+@media screen and (min-width: 992px){
+	.stats-container{
+		width: 970px;
+	}
+}

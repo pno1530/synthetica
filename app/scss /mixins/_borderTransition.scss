@@ -1,0 +1,13 @@
+@mixin borderTransition {
+	&:after {
+		display: block;
+		content: "";
+		padding-bottom: 10px;
+		border-bottom: 2px solid #7AE2DE;
+		transform: scaleX(0);
+		transition: transform 200ms ease-in-out;
+	}
+	&:hover:after{
+		transform: scaleX(1);
+	}
+}
