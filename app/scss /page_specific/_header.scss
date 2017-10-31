@@ -1,33 +1,35 @@
 .synthetica-logo{
+	background-color: $basic1;
 	display: inline-block;
-	background-color: #414A52;
 	text-align: center;
 	padding: 30px 0px;
+
 	a{
-		height: 100%;
 		display: inline-block;
+		height: 100%;
 	}
 
 }
 .header-synthetica{
 	@include clearfix;
 	.synthetica-syntheticawrap{
-		float: right;
 		display: inline-block;
+		float: right;
 		// position: relative;
 	}
 }
 .syntheticawrap-search{
-	padding: 32px 30px;
-	background-color: #414A52;
 	@include clearfix;
+	background-color: $basic1;
+	padding: 32px 30px;
+	
 	.search-subscribe{
-	    padding: 10px 20px 0px 0px;
 		border-right: solid 1px #505c66;
-	    color: #7AE2DE;
-	    display: inline-block;
-	    @include borderTransition;
-	    font-size: 15px;
+		color: $basic2;
+		display: inline-block;
+		padding: 10px 20px 0px 0px;
+		@include borderTransition;
+		@include font-size(15);
 	}
 
 	.fa-search:before{
@@ -37,18 +39,19 @@
 .syntheticawrap-menu{
 	span{
 		@include borderTransition;
-		font-size: 13px;
-		padding: 5px 20px 0px;
+		@include font-size(13);
+		border-right: solid 1px $basic5;
 		letter-spacing: 1px;
+		padding: 5px 20px 0px;
 		text-transform: uppercase;
-		border-right: solid 1px #E5E7E9;
+		
 		& a{
 			font-weight: 600;
-			color: #414A52;
-			font-family: Raleway,Verdana,Arial,sans-serif;
+			color: $basic1;
+			font-family: $font-third;
 		}
 		& a:hover{
-			color: #7AE2DE;
+			color: $basic2;
 		}
 	}
 	span:last-child{
@@ -57,20 +60,20 @@
 
 }
 .nav-toggle{
-	padding: 10px 35px 16px 0px;
-	position: absolute;
 	left: 50%;
 	top: 50%;
+	padding: 10px 35px 16px 0px;
+	position: absolute;
 	transform: translate(-50%,-50%);
 	span, span:before, span:after{
-		display: block;
-		width: 35px;
-		height: 3px;
-		content: "";
-		position: absolute;
-		background: #fff;
-		border-radius: 1px;
+		background: $white;
 		cursor: pointer;
+		content: "";
+		display: block;
+		height: 3px;
+		position: absolute;
+		width: 35px;
+		@include border-radius(1px);
 	}
 	span:before{
 		top: -10px;
@@ -94,7 +97,7 @@
 	}
 	.syntheticawrap-search {
 		letter-spacing: 1px;
-		font-size: 13px;
+		@include font-size(13);
 	}
 	.syntheticawrap-menu {
 		margin-right: 10px;
@@ -112,14 +115,14 @@
 
 @media screen and (max-width: 1024px){
 	.syntheticawrap-nav{
+		background-color: $basic1;
 		visibility: visible;
 		position: absolute;
 		top: 0;
 		right: 0;
 		padding: 52px;
-		-webkit-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-		background-color: #414A52;
+		@include transition(all 300ms ease-in-out);
+		
 	}
 	.syntheticawrap-menu, .syntheticawrap-search .search-searchbar, .syntheticawrap-search .search-subscribe {
 		display: none;
@@ -132,36 +135,38 @@
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-color: #414A52;
+		background-color: $basic1;
+
 		.search-subscribe{
+			@include font-size(30);
+			color: $white;
 			display: block;
+			font-weight: 600;
 			padding: 10px 20px;
-			display: block;
-			font-size: 30px;
-			color: #fff;
 			padding-bottom: 60px;
 			text-align: center;
-			font-weight: 600;
 		}
 		.syntheticawrap-search{
 			padding: 0;
 		}
 	}
 	.hiddenMenu {
-		width: 100%;
+		display: block;
 		padding: 100px 0 0;
 		text-align: center;
-		display: block;
+		width: 100%;
+
 		span{
+			@include font-size(30);
 			padding: 10px 20px;
 			display: block;
-			font-size: 30px;
+
 			a{
-				color: #fff;
+				color: $white;
 				padding-bottom: 40px;
 				display: inline-block;
 				&:hover{
-					color: #7ae2de;
+					color: $basic2;
 				}
 			}
 			&:after{
@@ -173,6 +178,7 @@
 	.close{
 		z-index: 99;
 		position: fixed;
+
 		a{
 			span{
 				background-color: transparent;
@@ -192,8 +198,8 @@
 }
 @media screen and (max-width: 480px){
 	.header-synthetica{
-		border-bottom: solid 5px #7ae2de;
-		background-color: #414A52;
+		border-bottom: solid 5px $basic2;
+		background-color: $basic1;
 	}
 	.synthetica-logo{
 		border-bottom: none;
@@ -204,10 +210,6 @@
 }
 @media screen and (min-width: 481px){
 	.synthetica-logo{
-		border-bottom: solid 5px #7AE2DE;
+		border-bottom: solid 5px $basic2;
 	}
-}
-
-@media screen and (min-width: 481) and (max-width: 1024){
-
 }

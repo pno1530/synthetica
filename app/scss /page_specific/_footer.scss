@@ -1,6 +1,6 @@
 .synthetica-footer{
+	background-color: $basic1;
 	padding: 80px 0;
-	background-color: #414A52;
 
 	.footer-container{
 		padding: 0 15px;
@@ -14,8 +14,8 @@
 			margin-bottom: 10px;
 		}
 		p{
-			font-size: 14px;
-			color: #fff;
+			@include font-size(14);
+			color: $white;
 			line-height: 27px;
 			padding-bottom: 15px;
 
@@ -27,16 +27,16 @@
 	}
 
 	.container-nav{
-		padding-top: 20px;
 		border-top: solid 1px rgba(255,255,255,0.15);
+		padding-top: 20px;
 
 		a{
+			border-bottom: dashed 1px rgba(255,255,255,0.25);
+			color: $white;
 			display: block;
 			padding: 15px 0;
 			margin-bottom: 20px;
-			color: #fff;
-			font-size: 14px;
-			border-bottom: dashed 1px rgba(255,255,255,0.25);
+			@include font-size(14);
 
 			i{
 				margin-right: 5px;
@@ -48,18 +48,18 @@
 			}
 		}
 		a:hover{
-			color: #7AE2DE;
+			color: $basic2;
 		}
 		.nav-foot{
 			margin: 40px 0 0;
 			padding: 0;
 			p{
-				color: #8A9097;
+				color: $basic3;
 			}
 			a{
+				border-bottom: 0;
 				margin: 10px 0 0;
 				padding: 0;
-				border-bottom: 0;
 			}
 		}
 	}

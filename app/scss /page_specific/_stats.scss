@@ -1,8 +1,8 @@
 .synthetica-stats{
-	padding: 160px 0px;
 	background: url("../../public/images/stats-bg.jpg") no-repeat center center;
 	// background-size: auto auto;
 	background-size: cover;
+	padding: 160px 0px;
 
 	.stats-container{
 		padding: 0px 15px;
@@ -72,18 +72,19 @@
 				// vertical-align: 22px;
 
 				p.wrapper-number {
-					font-family: Montserrat,Georgia,"Times New Roman",serif;
+					@include font-size(48);
+					color: $white;
 					font-size: 48px;
-					color: #fff;
+					font-family: Montserrat,Georgia,"Times New Roman",serif;
 					margin-bottom: 15px;
 				}
 				p.wrapper-text {
-					font-size: 15px;
+					@include font-size(15);
+					color: $white;
 					font-weight: 500;
 					line-height: .7;
 					padding: 0;
 					text-transform: uppercase;
-					color: #fff;
 				}
 			}
 		}
@@ -96,18 +97,18 @@
 }
 @media screen and (min-width: 768px){
 	.stats-container{
-		width: 750px;
 		box-sizing: border-box;
 		margin: 0px auto;
+		width: 750px;
 
 		.container-stats{
 			box-sizing: border-box;
 			.stats-content{
-				width: 32%;
-				margin-bottom: 0px;
-				text-align: center;	
-				display: inline-block;
 				box-sizing: border-box;	
+				display: inline-block;
+				margin-bottom: 0px;
+				text-align: center;
+				width: 32%;	
 			}
 		}
 	}

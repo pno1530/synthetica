@@ -1,69 +1,53 @@
-@media screen and (min-width: 768px){
-	.crew-container {
-		width: 750px;
-	}	
-}
-@media screen and (min-width: 992px){
-	.crew-container {
-		width: 970px;
-	}
-}
-@media screen and (min-width: 1200px){
-	.crew-container {
-		width: 1170px;
-	}
-}
-
 .synthetica-crew{
+	background-color: $basic6;
 	padding: 125px 0;
-	background-color: #F4F6F9;
-
-
+	
 	.crew-container{
+		box-sizing: border-box;
 		margin: 0px auto;
 		padding: 0px 15px;
-		box-sizing: border-box;
-
+		
 		h4{
-			font-size: 15px;
+			@include font-size(15);
 			font-weight: 600;
 			margin: 7px 0 65px 60px;
 			text-transform: uppercase;
 		}
 		h4:after{
+			background-color: $basic2;
 			content: "";
 			display: block;
-			width: 30px;
-			margin-top: 15px;
-			background-color: #7AE2DE;
 			height: 2px;
+			margin-top: 15px;
+			width: 30px;
 		}
 	}
 	.container-content{
 		@include clearfix;	
 		.content-member{
 			// width: 100% !important;
+			box-sizing: border-box;
 			float: left;
 			height: 300px;
-			box-sizing: border-box;
 
 			.members{
 				display: none;
-				text-align: center;
 				padding: 15px 15px 25px 15px;
+				text-align: center;
+
 				h2,p{
-					color: #fff;
+					color: $white;
 				}
 				h2{
-					font-size: 15px;
+					@include font-size(15);
 					font-weight: 500;
 					line-height: 20px;
 					text-transform: uppercase;
 				}
 				p{
-					padding: 15px 15px 25px;
-					font-size: 15px;
+					@include font-size(15);
 					line-height: 27px;
+					padding: 15px 15px 25px;
 				}
 				.crew-socials{
 					ul{
@@ -87,75 +71,77 @@
 			}
 			&.content-member:hover{
 				.members{
-					display: inline-block;
+					// display: inline-block;
 					display: table-cell;
-					vertical-align: middle;
 					height: 100%;
+					vertical-align: middle;
 				}
 				.membersLayout{
 					background-color: rgba(122,226,222,0.8);
+					display: table;
 					height: 100%;
 					width: 100%;
-					display: table;
 				}
 			}
 		}
 		.content-memberOne{
 			background: url("../../public/images/crew-peter-finlan.jpg") no-repeat 0px 0px;
-			width: 100%;
-			height: 100%;
 			background-size: cover;
 			background-position: center;
+			height: 100%;
+			width: 100%;
 		}
 		.content-memberTwo{
 			background: url("../../public/images/crew-blaz-robar.jpg") no-repeat 0px 0px;
-			width: 100%;
-			height: 100%;
 			background-size: cover;
 			background-position: center;
+			height: 100%;
+			width: 100%;		
 		}
 		.content-memberThree{
 			background: url("../../public/images/crew-mary-lou.jpg") no-repeat 0px 0px;
-			width: 100%;
-			height: 100%;
 			background-size: cover;
 			background-position: center;
+			height: 100%;
+			width: 100%;
 		}
 		.content-memberFour{
 			background: url("../../public/images/crew-dude.jpg") no-repeat 0px 0px;
-			width: 100%;
-			height: 100%;
 			background-size: cover;
 			background-position: center;
+			height: 100%;
+			width: 100%;
 		}
 	}
 }
 .container-skillset{
-	margin-top: 55px;
 	box-sizing: border-box;
-	
+	margin-top: 55px;
+	@include clearfix;
+		
 	.bar-chart-wrapper{
 		margin-bottom: 35px;
 		position: relative;
 		h5{
-			font-size: 13px;
-			font-weight: 600;
-			display: inline-block;
-			text-transform: uppercase;
+			@include font-size(13);
 			color: #414A52;
+			display: inline-block;
+			font-weight: 600;
+			text-transform: uppercase;
+			
 			.push-right{
 				position: absolute;
-				top: 0;
 				right: 0;
+				top: 0;
 			}
 		}
 		.bar-wrapper{
-			background-color: #414A52;
+			background-color: $basic1;
 			width: 100%;
 			// position: relative;
 			.bar{
+				background-color: $basic2;
 				height: 10px;
-				background-color: #7AE2DE;
 				margin: 10px 0;
 				overflow: hidden;
 				// position: relative;
@@ -174,32 +160,22 @@
 	}
 	.skillset-left, .skillset-right{
 		// width: 50%;
-		
 		box-sizing: border-box;
 		padding: 0 15px;
 	}
 }
-@media screen and (max-width: 768px){
-	.crew-container{
-		width: auto;
-	}
-	.content-member{
-		width: 100%;
-		padding: 15px 0px;
-	}
-	.synthetica-crew{
-		padding: 80px 0px;
-	}
-}
 @media screen and (min-width: 768px){
+	.crew-container {
+		width: 750px;
+	}
 	.container-header{
 		h4{
 			margin-left: 0px;
 		}
 	}
 	.content-member{
-		width: 50%;
 		padding: 15px;
+		width: 50%;
 		.content-memberOne, .content-memberTwo, .content-memberThree, .content-memberFour{
 			background-size: cover;
 			background-position: center;
@@ -207,13 +183,15 @@
 	}
 	.skillset-left, .skillset-right{
 		width: 100%;
-	}
-
+	}	
 }
 @media screen and (min-width: 992px){
+	.crew-container {
+		width: 970px;
+	}
 	.content-member{
-		width: 25%;
 		padding: 0px 15px;
+		width: 25%;
 		.content-memberOne, .content-memberTwo, .content-memberThree, .content-memberFour{
 			background-size: auto;
 		}
@@ -222,5 +200,22 @@
 	.skillset-left, .skillset-right{
 		width: 50%;
 		float: left;
+	}
+}
+@media screen and (min-width: 1200px){
+	.crew-container {
+		width: 1170px;
+	}
+}
+@media screen and (max-width: 768px){
+	.crew-container{
+		width: auto;
+	}
+	.content-member{
+		padding: 15px 0px;
+		width: 100%;
+	}
+	.synthetica-crew{
+		padding: 80px 0px;
 	}
 }

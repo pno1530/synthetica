@@ -1,8 +1,12 @@
-@import "base/base";
+@import "setup/variables";
 
 @import "mixins/font-size";
 @import "mixins/clearfix";
 @import "mixins/borderTransition";
+@import "mixins/border-radius";
+@import "mixins/transition";
+
+@import "base/base";
 
 @import "ui_components/slider";
 
