@@ -451,7 +451,8 @@ a {
         position: relative; }
         .synthetica-collective .collective-container .container-collective .collective-vedio_player video {
           width: 100%;
-          height: 280px; }
+          height: 280px;
+          background-image: url("../../public/images/video-cover.jpg"); }
         .synthetica-collective .collective-container .container-collective .collective-vedio_player img {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -470,9 +471,6 @@ a {
           left: 0;
           position: absolute;
           right: 0; }
-
-video {
-  background-color: #000; }
 
 .duration, .current {
   position: absolute;
