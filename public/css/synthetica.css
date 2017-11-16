@@ -730,7 +730,7 @@ video {
     .synthetica-stats .stats-container .stats-content:last-child {
       margin-bottom: 0px; }
     .synthetica-stats .stats-container .stats-content {
-      width: 210px;
+      width: 215px;
       margin: 0 auto 100px;
       text-align: left;
       padding: 0px 15px; }
@@ -758,7 +758,7 @@ video {
         display: inline-block;
         margin-right: 10px;
         vertical-align: 10px;
-        color: #fff; }
+        color: transparent; }
       .synthetica-stats .stats-container .stats-content .icon {
         font-family: 'Stroke-Gap-Icons';
         font-weight: normal;
@@ -766,6 +766,21 @@ video {
         font-variant: normal;
         line-height: 1;
         text-transform: none; }
+      .synthetica-stats .stats-container .stats-content .icon-Cup {
+        background: url("../../public/images/Cup.png") 0px 0px;
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 60px; }
+      .synthetica-stats .stats-container .stats-content .icon-Book {
+        background: url("../../public/images/Book.png") 0px 0px;
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 60px; }
+      .synthetica-stats .stats-container .stats-content .icon-Pen {
+        background: url("../../public/images/Pen.png") 0px 0px;
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 60px; }
       .synthetica-stats .stats-container .stats-content .icon-Cup:before {
         content: '\e628'; }
       .synthetica-stats .stats-container .stats-content .icon-Book::before {
@@ -802,7 +817,6 @@ video {
         box-sizing: border-box;
         display: inline-block;
         margin-bottom: 0px;
-        text-align: center;
         width: 32%; } }
 @media screen and (min-width: 992px) {
   .stats-container {

@@ -20,11 +20,13 @@ $( document ).ready(function() {
 
 	// $(".collective-vedio_player img").css("display","inline-block");
 
-	//update HTML5 video current play time
+	
 	$("#myvideo").on('timeupdate', function() {
+	////update HTML5 video progress bar
 	var percentage = ( $("#myvideo").get(0).currentTime / $("#myvideo").get(0).duration ) * 100;
 	$(".bar span").css("width", percentage+"%");
 
+	//update HTML5 video current play time
 	var actualCurrentTime = $("#myvideo").get(0).currentTime;
 	var currentTime = (1/duration)*actualCurrentTime;
 	remainingTime = -(1-currentTime);
