@@ -9,8 +9,6 @@ body {
   overflow-x: hidden; }
 
 html, body {
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0; }
 
@@ -91,72 +89,73 @@ a {
     cursor: -webkit-grab;
     cursor: grab; }
     .slider-sliderContainer .slider ul {
+      zoom: 1;
       width: 300%;
       height: 100%;
-      display: block;
-      zoom: 1; }
+      display: block; }
       .slider-sliderContainer .slider ul:before, .slider-sliderContainer .slider ul:after {
         content: "";
         display: table; }
       .slider-sliderContainer .slider ul:after {
         clear: both; }
       .slider-sliderContainer .slider ul li {
-        width: 33.3333%;
+        display: table;
         float: left;
-        display: table; }
+        width: 33.3333%; }
   .slider-sliderContainer ol {
     position: absolute;
-    top: 50%;
     right: 25px;
+    top: 50%;
     transform: translateY(-50%); }
     .slider-sliderContainer ol li {
-      width: 12px;
-      height: 12px;
-      display: inline-block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
       border: 2px solid #fff;
       background: transparent;
-      border-radius: 50%;
       display: block;
-      margin: 0px 0px 20px; }
+      height: 12px;
+      margin: 0px 0px 20px;
+      width: 12px; }
 
 .sliderContainer-dots .active {
   background-color: #fff; }
 
 .slidead-container {
+  display: table-cell;
   position: absolute;
   top: 0px;
   width: 100%;
-  display: table-cell;
   vertical-align: middle; }
 
 .slidead-container {
   height: 100%; }
   .slidead-container .container-ad-container {
+    box-sizing: border-box;
+    display: table;
+    height: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
-    display: table;
-    height: 100%; }
+    margin-left: auto; }
     .slidead-container .container-ad-container .container-ad {
       display: table-cell;
       vertical-align: middle; }
   .slidead-container .ad-top {
     text-align: center; }
     .slidead-container .ad-top h1 {
-      font-size: 45px;
+      font-size: 45pxpx;
       font-weight: 100;
       line-height: 68px;
       margin-bottom: 40px;
       color: #fff; }
     .slidead-container .ad-top a {
+      font-size: 13pxpx;
+      background-color: #7AE2DE;
+      color: #fff;
       display: inline-block;
-      font-size: 13px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      color: #fff;
-      background-color: #7AE2DE;
       padding: 20px;
       text-decoration: none;
       line-height: 1; }
@@ -270,28 +269,28 @@ a {
   .syntheticawrap-search .fa-search:before {
     content: "\f002"; }
 
-.syntheticawrap-menu span {
+.syntheticawrap-menu ul li {
   font-size: 13px;
   border-right: solid 1px #E5E7E9;
   letter-spacing: 1px;
   padding: 5px 20px 0px;
   text-transform: uppercase; }
-  .syntheticawrap-menu span:after {
+  .syntheticawrap-menu ul li:after {
     display: block;
     content: "";
     padding-bottom: 10px;
     border-bottom: 2px solid #7AE2DE;
     transform: scaleX(0);
     transition: transform 200ms ease-in-out; }
-  .syntheticawrap-menu span:hover:after {
+  .syntheticawrap-menu ul li:hover:after {
     transform: scaleX(1); }
-  .syntheticawrap-menu span a {
+  .syntheticawrap-menu ul li a {
     font-weight: 600;
     color: #414A52;
     font-family: Raleway, Verdana, Arial, sans-serif; }
-  .syntheticawrap-menu span a:hover {
+  .syntheticawrap-menu ul li a:hover {
     color: #7AE2DE; }
-.syntheticawrap-menu span:last-child {
+.syntheticawrap-menu ul li:last-child {
   border-right: none; }
 
 .nav-toggle {
@@ -336,7 +335,7 @@ a {
   .syntheticawrap-nav {
     visibility: hidden; }
 
-  .syntheticawrap-menu, .syntheticawrap-search, .syntheticawrap-menu span {
+  .syntheticawrap-menu, .syntheticawrap-search, .syntheticawrap-menu ul li {
     display: inline-block; } }
 @media screen and (max-width: 1024px) {
   .syntheticawrap-nav {
@@ -426,8 +425,8 @@ a {
     padding: 0px 15px; }
     .synthetica-collective .collective-container h4 {
       font-size: 15px;
-      font-weight: 600;
-      margin: 7px 0 65px 0px; }
+      font-weight: 400;
+      margin: 7px 0 65px 60px; }
     .synthetica-collective .collective-container h4:after {
       background-color: #7AE2DE;
       content: '';
@@ -1126,6 +1125,9 @@ video {
       display: table; }
     .right:after {
       clear: both; } }
+@media screen and (min-width: 1200px) {
+  .freebies-intro {
+    width: 1170px; } }
 .synthetica-getStarted {
   background-image: linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
   padding: 90px 0;

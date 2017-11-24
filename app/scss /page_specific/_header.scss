@@ -37,7 +37,7 @@
 	}
 }
 .syntheticawrap-menu{
-	span{
+	ul li{
 		@include borderTransition;
 		@include font-size(13);
 		border-right: solid 1px $basic5;
@@ -54,7 +54,7 @@
 			color: $basic2;
 		}
 	}
-	span:last-child{
+	ul li:last-child{
 		border-right: none;
 	}
 
@@ -108,7 +108,7 @@
 	.syntheticawrap-nav{
 		visibility: hidden;
 	}
-	.syntheticawrap-menu, .syntheticawrap-search, .syntheticawrap-menu span {
+	.syntheticawrap-menu, .syntheticawrap-search, .syntheticawrap-menu ul li {
 		display: inline-block;
 	}
 }

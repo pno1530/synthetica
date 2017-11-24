@@ -1,6 +1,4 @@
 .slider-sliderContainer{
-	// 
-	// height: calc(100vh - 8.2em);
 	max-height: 760px;
 	padding: 10px 10px 10px 10px;
 	position: relative;
@@ -9,8 +7,6 @@
 		width: 100%;
 		height: auto;
 		height: fit-content;
-		// height: calc(100vh - 8.2em);
-		// height: 344px;
 	}
 	.slider{
 		width: 100%;
@@ -20,32 +16,33 @@
 		cursor: -webkit-grab;
 		cursor: grab;
 		ul{
+			@include clearfix;
 			width: 300%;
 			height: 100%;
 			display: block;
-			@include clearfix;
+			
 			li{
-				width: 33.3333%;
-				float: left;
 				display: table;
+				float: left;
+				width: 33.3333%;
 			}
 		}
 	}
 	ol{
 		position: absolute;
-		top: 50%;
 		right: 25px;
+		top: 50%;
 		transform: translateY(-50%);
 
 		li{
-			width: 12px;
-			height: 12px;
-			display: inline-block;
+			@include border-radius(50%);
 			border: 2px solid #fff;
 			background: transparent;
-			border-radius: 50%;
 			display: block;
+			// display: inline-block;
+			height: 12px;
 			margin: 0px 0px 20px;
+			width: 12px;
 		}
 	}
 
@@ -54,45 +51,44 @@
 	background-color: #fff;
 }
 .slidead-container{
+	display: table-cell;
 	position: absolute;
 	top: 0px;
 	width: 100%;
-	display: table-cell;
 	vertical-align: middle;
 }
 .slidead-container{
 	height: 100%;
 	.container-ad-container{
+		box-sizing: border-box;
+		display: table;
+		height: 100%;
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;	
-		box-sizing: border-box;
-		display: table;
-		height: 100%;
 		.container-ad{
 			display: table-cell;
 			vertical-align: middle;
 		}	
 	}
 
-
 	.ad-top{
 		text-align: center;
 		h1{
-			font-size: 45px;
+			@include font-size(45px);
 			font-weight: 100;
 			line-height: 68px;
 			margin-bottom: 40px;
-			color: #fff;
+			color: $white;
 		}
 		a{
+			@include font-size(13px);
+			background-color: $basic2;
+			color: $white;
 			display: inline-block;
-			font-size: 13px;
 			letter-spacing: 1px;
 			text-transform: uppercase;
-			color: #fff;
-			background-color: #7AE2DE;
 			padding: 20px;
 			text-decoration: none;
 			line-height: 1;
